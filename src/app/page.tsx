@@ -1,7 +1,13 @@
+import MovieSearch from "./components/MovieSearch";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Tushar </h1>
-    </main>
+    <div className="bg-black min-h-screen">
+      <main className="container mx-auto py-10 px-4 flex flex-col items-center justify-center">
+        <h1 className="text-4xl font-bold mb-8 text-white">Movie Database</h1>
+
+        <MovieSearch />
+      </main>
+    </div>
   );
 }
